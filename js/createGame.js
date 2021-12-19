@@ -13,6 +13,7 @@ function createGame () {
   mainCard.innerHTML += '\
       <div class="card-header" id="replayButtonCard">\
         <a href="#" class="btn btn-outline-dark" onclick="return location.reload()">Replay</a>\
+        <param name="marks" id="marks" value=0>\
         <param name="uncoveredCells" id="uncoveredCells" value='+0+'>\
         <param name="minesNumber" id="minesNumber" value='+minesNumber+'>\
         <param name="horizontalSquares" id="horizontalSquares" value='+horizontalSquares+'>\
@@ -26,7 +27,6 @@ function createGame () {
         </div>\
       </div>';
   }
-  var array = document.getElementById("array");
   for(var i = 1; i <= verticalSquares; ++i) {
     var name = i+"Row";
     var iRow = document.getElementById(name);
