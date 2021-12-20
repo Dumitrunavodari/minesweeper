@@ -5,7 +5,7 @@ function oneClick (element) {
   var i = extractRow(element);
   var j = extractColumn(element);
 
-  if(document.getElementById(i+'param'+j).value == 0) {;
+  if(document.getElementById(i +'param'+ j).value == 0) {;
     return uncover(element);
   } else {
     return loosing();
